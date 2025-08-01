@@ -68,6 +68,6 @@ class Deck:
 
         number_of_cards = self.number_of_players * self.number_of_cards
         for deck in self.player_decks:
-            deck['deck'] = self.shuffled_cards[deck['player']                                               :number_of_cards:self.number_of_players]
+            deck['deck'] = self.shuffled_cards[deck['player']:number_of_cards:self.number_of_players]
 
         self.remaining_cards = self.shuffled_cards[number_of_cards:]

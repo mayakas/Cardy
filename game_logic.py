@@ -2,15 +2,15 @@ from random import random, choice, shuffle
 from DeckClass import Deck
 from databank import cards
 from player import Player
-from user_input import *
+from Inputs import *
 from output import *
 
 # Function that calls all the other logic functions
 
 
 def main():
-    players = number_of_players()
-    no_of_cards = number_of_cards()
+    players = Inputs.number_of_players()
+    no_of_cards = Inputs.number_of_cards()
     deck = Deck(cards, players, no_of_cards)
     player_decks = deck.player_decks
     starting_card = deck.the_starting_card
